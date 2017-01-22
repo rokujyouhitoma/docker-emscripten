@@ -2,8 +2,14 @@ FROM ubuntu:16.04
 
 MAINTAINER Ike Tohru "ike.tohru@gmail.com"
 
-RUN apt-get install -y python2.7 nodejs
-RUN apt-get install -y build-essential cmake git-core default-jre
+RUN apt-get install -y python2.7 \
+    nodejs \
+    build-essential \
+    cmake \
+    git-core \
+    default-jre \
+&& apt-get clean \
+&& rm -rf /var/lib/apt/lists/*
 
 RUN ln -s /usr/bin/python2.7 /usr/bin/python
 
