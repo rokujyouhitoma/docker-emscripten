@@ -2,7 +2,8 @@ FROM ubuntu:16.04
 
 MAINTAINER Ike Tohru "ike.tohru@gmail.com"
 
-RUN apt-get install -y python2.7 \
+RUN apt-get update \ 
+    apt-get install -y python2.7 \
     nodejs \
     build-essential \
     cmake \
