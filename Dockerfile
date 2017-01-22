@@ -3,7 +3,6 @@ FROM ubuntu:16.04
 MAINTAINER Ike Tohru "ike.tohru@gmail.com"
 
 RUN \
-apt-get update && \
 apt-get install -y python2.7 && \
 apt-get install -y nodejs && \
 apt-get install -y build-essential && \
